@@ -1,12 +1,6 @@
 import { createClient } from '@supabase/supabase-js'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co'
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key'
+const supabaseUrl = 'https://essoxnsgflcrrigplyyw.supabase.co'
+const supabaseAnonKey = 'sb_publishable_UzzzK-ZTGjVwA8TXwup13A_ZJz6bL8'
 
-// Build zamanı xəta verməməsi üçün təhlükəsiz yoxlama
-export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
-  auth: {
-    persistSession: false,
-    autoRefreshToken: false,
-  },
-})
+export const supabase = createClient(supabaseUrl, supabaseAnonKey)
